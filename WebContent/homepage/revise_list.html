@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		#reviseList{
+			list-style-type:none;
+		}
+	</style>
+		
+	</head>
+
+	
+	<body>
+		<ul id="reviseList">
+			<li>
+				<label for="brand"><b>브랜드명</b></label><br>
+				<input type="text" id="brand" name="brand" style="width: 260px;" value="쿠시노"/><br/>
+			</li>
+			<li>
+				<label for="product_name"><b>제품명</b></label><br />
+				<input type="text" id="product_name" name="product_name" style="width: 250px;" value="저상형 패밀리침대(인조가죽)"/><br/>
+			</li>
+			<li>
+				<label for="product_price"><b>가격(원)</b></label><br />
+				<input type="number" id="product_price" name="product_price" style="width: 250px;" value="1009000"/><br/>				
+			</li>
+			<li>
+				<label for="delivery_date"><b>배송기간</b></label><br />
+				<input type="text" id="delivery_date" name="delivery_date" style="width: 250px;" value=" 약 10일"/><br />
+			</li>
+			<li>
+				<label for="delivery_fee"><b>배송비</b></label><br />
+				<input type="text" id="delivery_fee" name="delivery_fee" style="width: 250px;" value="무료배송"/><br />
+			</li>
+			<li>
+				<label for="delivery_method"><b>배송방법</b></label><br />
+				<input type="text" id="delivery_method" name="delivery_method" style="width: 250px;" value="설치배송"/><br />
+			</li>
+			<li>
+				<label for="product_code"><b>제품코드</b></label><br />
+				<input type="text" id="product_code" name="product_code" style="width: 250px;" value="HB722501"/><br />
+			</li>
+			<li>
+				<label for="product_color"><b>[필수]색상</b></label><br />
+				<input type="text" id="product_color" name="product_color" style="width: 250px;"/><br />
+				<input type="button" onclick="addOpt()" value="추가" />
+				<input type="button" onclick="addOpt()" value="삭제" />
+				<div id="addOption">
+					<select name="color_select" id="color_select">
+						<option value="">hi</option>
+					</select>
+				</div>
+			</li>
+			<li>
+				<label for="product_option"><b>[선택]제품사양</b></label><br />
+				<input type="text" id="product_option" name="product_option" style="width: 250px;"/><br />
+			</li>
+		</ul>
+		
+				<script>
+					const addOpt = () =>{
+						var pColor = $("#product_color");
+						var addOption =pColor.val();
+						console.log(addOption);
+						console.log(event.target.value);
+						$("#color_select").append("<option value='' id=" +addOption + ">"+addOption+"</option>")
+						console.log(document.querySelector("#addOption"));	
+					}
+				</script>
+				
+		
+	</body>
+</html>
