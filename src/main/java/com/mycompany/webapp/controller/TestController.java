@@ -1,5 +1,7 @@
 package com.mycompany.webapp.controller;
 
 public class TestController {
-ㄴㅇㄹㄴㅇㅇㄹㄴㅇ
+	public static void main(String[] args) {
+
+	}
 }
