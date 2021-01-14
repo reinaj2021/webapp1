@@ -25,25 +25,21 @@
 				
 						
 						<div class="sector">
-					<h5>브라우저 정보 읽기</h5>
+					<h5>Forward Test</h5>
 					<div>
-							<a class="btn btn-info btn-sm" href=="method2">브라우저 정보읽기</a></div>
+							<a class="btn btn-info btn-sm" href="forward">서버 내부에서 이동</a></div>
+						</div>
+					</div>
+						
+						<div class="sector">
+					<h5>Redirect Test</h5>
+					<div>
+					</br>
+					</br>
+							<a class="btn btn-info btn-sm" href="redirect">브라우저 재요청 </a></div>
+							</br></br>
+							<a class="btn btn-info btn-sm" href="redirect">로그인 요청 </a></div>
 						</div>
 					</div>
 					
-					<div class="sector">
-					<h5>HttpServletResponse 이용</h5>
-					<div>
-							<a class="btn btn-info btn-sm" href=="method3">쿠키 생성 및 보내기 </a></div>
-						</div>
-						
-						<div class="sector">
-					<h5>Request Response</h5>
-					<div>
-							<a class="btn btn-info btn-sm" href=="method5">쿠키 읽기 </a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</body>
-</html>
+					
