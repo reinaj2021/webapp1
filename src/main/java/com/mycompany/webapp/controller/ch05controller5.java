@@ -22,6 +22,15 @@ public class ch05controller5 {
 	public String method1(@RequestHeader("User-Agent") String userAgent){
 		logger.info("실행");
 		logger.info("userAgent");
+		if(userAgent.contains("Edg")) {
+			logger.info("브라우저 종류 : 크롬");
+		} else if(userAgent.contains("Edg")) {
+			logger.info("브라우저 종류 : 엣지");
+		} else if(userAgent.contains("Trident/7.0")) {
+			logger.info("브라우저 종류: IE11");
+		} else if(userAgent.contains("MSIE")) {
+			logger.info("브라우저 종류: IE10이하");
+		}
 		return"ch05/content";
 }
 }

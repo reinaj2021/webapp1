@@ -26,6 +26,11 @@
 	</context-param>
 	
 	
+ <filter-mapping>
+      <filter-name>encodingFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+   </filter-mapping>
+
 
 	
 	<!-- WebappplicationContext 설정 -->
