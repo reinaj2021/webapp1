@@ -51,9 +51,14 @@
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>1.2</version>
 	</dependency>
-	
-	
-  </dependencies>
-  
+		
+		
+	</dependencies>
+	  
 </project>

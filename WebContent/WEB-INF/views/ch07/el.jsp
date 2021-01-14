@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
-
-<!DOCTYPE html>
+<%@ taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt"%>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -21,26 +21,42 @@
 				<jsp:include page="/WEB-INF/views/include/menu.jsp"></jsp:include>
 				
 				<div class="content">
-					<div class="sector">
-				
-						
-						<div class="sector">
-					<h5>Forward Test</h5>
-					<div>
-							<a class="btn btn-info btn-sm" href="forward">서버 내부에서 이동</a></div>
-						</div>
-					</div>
-						
-						<div class="sector">
-					<h5>Redirect Test</h5>
-					<div>
-					</br></br>
-							<a class="btn btn-info btn-sm" href="redirect">브라우저 재요청 </a></div>
-							</br></br>
-							<a class="btn btn-info btn-sm" href="redirect">로그인 요청 </a></div>
-							</br></br>
-							<a class="btn btn-info btn-sm" href="boardwrite">게시물 저장 </a></div>
-						</div>
-					</div>
+				<div class="sector">
+					<h5>컬렉션 이용하기</h5>
 					
+					<div>
+					<table>
+					<tr>
+					<th>번호</th>
+					<th>번호</th>
+					<th>번호</th>
+					<th>번호</th>
+					<th>번호</th>
+					<th>번호</th>
+					</tr>
+					
+					
+					
+					<c;forEach var="Board" items="${BoardList }"> 
+					<tr>
+					<td>${board.no}</td>
+					<td>${board.no}</td>
+					<td>${board.no}</td>
+					<td>${board.no}</td>
+					<td>${board.no}</td>
+					<td><fmt(formatDate value="${board.date}"pattern="yyyy--MM--dd/)></td>
+					</tr>
+					</c;forEach>
+					
+					
+					
+					
+				</div> 
+				
+				
+				</div>
+				
+				
+			
+				
 					

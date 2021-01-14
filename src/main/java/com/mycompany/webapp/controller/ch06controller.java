@@ -38,8 +38,18 @@ public class ch06controller {
 	}
 	@GetMapping("/login")
 	public String login() {
-		logger.info("실행");
+		logger.info("로그인 ");
 		return"redirect:/ch06/content";
+}
+	@GetMapping("/boardwrite")
+	public String boardwrite() {
+		logger.info("게시물 저장 성공");
+		return"redirect:/ch06/boardList";
+}
+	@GetMapping("/boardlist")
+	public String boardlist() {
+		logger.info("게시물 목록 생성");
+		return"redirect:/ch06/boardList"; //jsp로 이동 //
 }
 }
 	

@@ -1,3 +1,5 @@
+
+
 <%@ page contentType="text/html; charset=UTF-8"%>
 
 <!DOCTYPE html>
@@ -25,22 +27,30 @@
 				
 						
 						<div class="sector">
-					<h5>Forward Test</h5>
+					<h5>EL를 이용하여 스컬라 값 전달</h5>
 					<div>
-							<a class="btn btn-info btn-sm" href="forward">서버 내부에서 이동</a></div>
+					<div>name: ${name}</div>
+					<div>age: ${26}</div>
+					<div>직업: ${인공지능개발자}</div>
+							<a class="btn btn-info btn-sm" href="method1">데이터 전달</a></div>
 						</div>
 					</div>
+				
 						
 						<div class="sector">
-					<h5>Redirect Test</h5>
+					<h5>객체 이용한 객체 전달</h5>
 					<div>
-					</br></br>
-							<a class="btn btn-info btn-sm" href="redirect">브라우저 재요청 </a></div>
-							</br></br>
-							<a class="btn btn-info btn-sm" href="redirect">로그인 요청 </a></div>
-							</br></br>
-							<a class="btn btn-info btn-sm" href="boardwrite">게시물 저장 </a></div>
+					<div>번호: ${board1.no}</div>
+					<div>제목: ${board1.title}</div>
+					<div>내용: ${board1.content}</div>
+					<div>직업: ${board1.writer}</div>
+					<div>날짜: ${board1.date}</div>
+							<a class="btn btn-info btn-sm" href="method1">데이터 전달</a></div>
 						</div>
 					</div>
 					
+						</div>
+					</div>
+					
+				
 					
